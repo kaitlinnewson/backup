@@ -1,2 +1,2 @@
 # backup
-This plugin allow generation of a backup of an OJS 3.x installation.
+This plugin allows generation and download of backups of an OJS 3.x/OMP installation.

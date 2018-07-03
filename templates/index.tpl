@@ -8,41 +8,13 @@
  * List of operations this plugin can perform
  *}
 
-<script type="text/javascript">
-$(function() {ldelim}
-	$('ul#downloadLinks a').click(function(e) {ldelim}
-		e.preventDefault();
-		var errorMessage = $(this).closest('ul').data('message');
-		var url = $(this).attr('href');
-		var req = fetch(url, {ldelim}credentials: "same-origin"{rdelim})
-			.then(function(response) {ldelim}
-				if (!response.ok) {ldelim} throw Error(response.statusText); {rdelim}
-				return response.blob();
-			{rdelim})
-			.then(function(blob) {ldelim}
-				window.open(
-					URL.createObjectURL(
-						new Blob([blob], {ldelim}
-							type: "application/octet-stream"
-						{rdelim})
-					),
-					"_self"
-				)
-			{rdelim})
-			.catch(function(err) {ldelim}
-				alert(errorMessage);
-			{rdelim});
-	{rdelim});
-{rdelim});
-</script>
-
 {fbvFormSection description="plugins.generic.backup.longdescription" class="notice"}{/fbvFormSection}
 
 {assign var=footNoteNum value=1}
 <ul id="downloadLinks" data-message="{$errorMessage}">
 	<li>
 		{if $isDumpConfigured}
-			<a href="{url router=$smarty.const.ROUTE_COMPONENT op="manage" category="generic" plugin=$pluginName verb="db"}">
+			<a download href="{url router=$smarty.const.ROUTE_COMPONENT op="manage" category="generic" plugin=$pluginName verb="db"}">
 		{/if}
 			{translate key="plugins.generic.backup.db"}
 		{if $isDumpConfigured}
@@ -53,7 +25,7 @@ $(function() {ldelim}
 	</li>
 	<li>
 		{if $isTarConfigured}
-			<a href="{url router=$smarty.const.ROUTE_COMPONENT op="manage" category="generic" plugin=$pluginName verb="files"}">
+			<a download href="{url router=$smarty.const.ROUTE_COMPONENT op="manage" category="generic" plugin=$pluginName verb="files"}">
 		{/if}
 			{translate key="plugins.generic.backup.files"}
 		{if $isTarConfigured}
@@ -64,7 +36,7 @@ $(function() {ldelim}
 	</li>
 	<li>
 		{if $isTarConfigured}
-			<a href="{url router=$smarty.const.ROUTE_COMPONENT op="manage" category="generic" plugin=$pluginName verb="code"}">
+			<a download href="{url router=$smarty.const.ROUTE_COMPONENT op="manage" category="generic" plugin=$pluginName verb="code"}">
 		{/if}
 			{translate key="plugins.generic.backup.code"}
 		{if $isTarConfigured}

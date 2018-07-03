@@ -101,7 +101,7 @@ class BackupPlugin extends GenericPlugin {
 				$dumpTool = Config::getVar('cli', 'dump');
 				header('Content-Description: File Transfer');
 				header('Content-Disposition: attachment; filename=db-' . strftime('%Y-%m-%d') . '.sql');
-				header('Content-Type: text/plain');
+				header('Content-Type: application/sql');
 				header('Content-Transfer-Encoding: binary');
 				
 				passthru(strtr($dumpTool, array(
@@ -116,7 +116,7 @@ class BackupPlugin extends GenericPlugin {
 				$tarTool = Config::getVar('cli', 'tar');
 				header('Content-Description: File Transfer');
 				header('Content-Disposition: attachment; filename=files-' . strftime('%Y-%m-%d') . '.tar.gz');
-				header('Content-Type: text/plain');
+				header('Content-Type: application/gzip');
 				header('Content-Transfer-Encoding: binary');
 				passthru($tarTool . ' -c -z ' . escapeshellarg(Config::getVar('files', 'files_dir')), $returnValue);
 				if ($returnValue !== 0) header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);
@@ -125,7 +125,7 @@ class BackupPlugin extends GenericPlugin {
 				$tarTool = Config::getVar('cli', 'tar');
 				header('Content-Description: File Transfer');
 				header('Content-Disposition: attachment; filename=code-' . strftime('%Y-%m-%d') . '.tar.gz');
-				header('Content-Type: text/plain');
+				header('Content-Type: application/gzip');
 				header('Content-Transfer-Encoding: binary');
 				passthru($tarTool . ' -c -z ' . escapeshellarg(dirname(dirname(dirname(dirname(__FILE__))))), $returnValue);
 				if ($returnValue !== 0) header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);

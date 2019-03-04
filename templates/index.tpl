@@ -1,14 +1,14 @@
 {**
  * plugins/generic/backup/templates/index.tpl
  *
- * Copyright (c) 2014-2018 Simon Fraser University
- * Copyright (c) 2000-2018 John Willinsky
+ * Copyright (c) 2014-2019 Simon Fraser University
+ * Copyright (c) 2000-2019 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * List of operations this plugin can perform
  *}
 
-{fbvFormSection description="plugins.generic.backup.longdescription" class="notice"}{/fbvFormSection}
+<div>{translate key="plugins.generic.backup.longdescription" class="notice"}</div>
 
 {assign var=footNoteNum value=1}
 <ul id="downloadLinks" data-message="{$errorMessage}">

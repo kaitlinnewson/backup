@@ -44,15 +44,6 @@ class BackupPlugin extends GenericPlugin {
 	}
 
 	/**
-	 * Override the builtin to get the correct template path.
-	 *
-	 * @return string Plugin template path
-	 */
-	public function getTemplatePath($inCore = false) {
-		return parent::getTemplatePath($inCore) . 'templates/';
-	}
-
-	/**
 	 * Designate this plugin as a site plugin
 	 */
 	public function isSitePlugin() {
@@ -95,7 +86,7 @@ class BackupPlugin extends GenericPlugin {
 					'isTarConfigured' 	=> Config::getVar('cli', 'tar')!='',
 					'errorMessage' 		=> __('plugins.generic.backup.failure')
 				));
-				$output = $templateMgr->fetch($this->getTemplatePath() . 'index.tpl');
+				$output = $templateMgr->fetch($this->getTemplateResource('index.tpl'));
 				return new JSONMessage(true, $output);
 			case 'db':
 				$dumpTool = Config::getVar('cli', 'dump');

@@ -1,0 +1,43 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-02-13T01:05:20+00:00\n"
+"PO-Revision-Date: 2020-02-13T01:05:20+00:00\n"
+"Language: \n"
+
+msgid "plugins.generic.backup.name"
+msgstr "Модуль резервного копіювання"
+
+msgid "plugins.generic.backup.description"
+msgstr "Створює резервну копію інсталяції."
+
+msgid "plugins.generic.backup.link"
+msgstr "Завантажити резервну копію"
+
+msgid "plugins.generic.backup.longdescription"
+msgstr "<p>Наступні посилання дозволяють адміністратору сайту завантажити повну резервну копію різних компонентів інсталяції. Повна версія резервної копії містить <strong>усі</strong> наступні компоненти. Будь ласка, перегляньте технічну документацію для отримання додаткової інформації про те, як ці компоненти взаємопо'язані.</p>"
+
+msgid "plugins.generic.backup.db"
+msgstr "База даних"
+
+msgid "plugins.generic.backup.files"
+msgstr "Файли"
+
+msgid "plugins.generic.backup.code"
+msgstr "Код"
+
+msgid "plugins.generic.backup.tar.config"
+msgstr ""
+"{$footNoteNum}. <strong>Попередження:</strong> Інструмент \"tar\" не налаштований у файлі конфігурації config.inc.php. Конфігурація буде залежати від конфігурації вашого сервера. Вона повинна бути описана в секції з назвою [cli], у параметрі конфігурації, що називається \"tar\", зазначивши шлях до утиліти \"tar\", тобто:<br />\n"
+"<pre>[cli]\n"
+"tar = \"/bin/tar\"\n"
+"</pre><br />"
+
+msgid "plugins.generic.backup.failure"
+msgstr "<strong>Попередження: </strong>Під час резервного копіювання могла статися помилка. Найпоширенішою причиною є права доступу до файлів."

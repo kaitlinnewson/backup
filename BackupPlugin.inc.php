@@ -107,7 +107,7 @@ class BackupPlugin extends GenericPlugin {
 				header('Content-Disposition: attachment; filename=files-' . strftime('%Y-%m-%d') . '.tar.gz');
 				header('Content-Type: application/gzip');
 				header('Content-Transfer-Encoding: binary');
-				passthru($tarTool . ' -c -z ' . escapeshellarg(Config::getVar('files', 'files_dir')), $returnValue);
+				passthru($tarTool . ' -c -f - -z ' . escapeshellarg(Config::getVar('files', 'files_dir')), $returnValue);
 				if ($returnValue !== 0) header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);
 				exit();
 			case 'code':
@@ -116,7 +116,7 @@ class BackupPlugin extends GenericPlugin {
 				header('Content-Disposition: attachment; filename=code-' . strftime('%Y-%m-%d') . '.tar.gz');
 				header('Content-Type: application/gzip');
 				header('Content-Transfer-Encoding: binary');
-				passthru($tarTool . ' -c -z ' . escapeshellarg(dirname(dirname(dirname(dirname(__FILE__))))), $returnValue);
+				passthru($tarTool . ' -c -f - -z ' . escapeshellarg(dirname(dirname(dirname(dirname(__FILE__))))), $returnValue);
 				if ($returnValue !== 0) header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);
 				exit();
 		}

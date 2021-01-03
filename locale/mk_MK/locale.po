@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-12-25 22:52+0000\n"
+"PO-Revision-Date: 2021-01-04 14:52+0000\n"
 "Last-Translator: Mirko Spiroski <mspiroski@id-press.eu>\n"
 "Language-Team: Macedonian <http://translate.pkp.sfu.ca/projects/plugins/"
 "backup-plugin/mk_MK/>\n"
@@ -71,4 +71,4 @@ msgid "plugins.generic.backup.description"
 msgstr "Овој плагин создава бекап од инсталацијата."
 
 msgid "plugins.generic.backup.name"
-msgstr "Бекап плагин"
+msgstr "Плагин за бекап"

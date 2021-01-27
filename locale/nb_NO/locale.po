@@ -1,7 +1,8 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-01-16 22:53+0000\n"
-"Last-Translator: Eirik Hanssen <eirikh@oslomet.no>\n"
+"PO-Revision-Date: 2021-01-28 10:53+0000\n"
+"Last-Translator: FRITT, University of Oslo Library <fritt-"
+"info@journals.uio.no>\n"
 "Language-Team: Norwegian Bokmål <http://translate.pkp.sfu.ca/projects/"
 "plugins/backup-plugin/nb_NO/>\n"
 "Language: nb_NO\n"
@@ -65,10 +66,10 @@ msgstr ""
 "komponentene er koblet til. </p>"
 
 msgid "plugins.generic.backup.link"
-msgstr "Last ned backup"
+msgstr "Last ned sikkerhetskopi"
 
 msgid "plugins.generic.backup.description"
 msgstr "Dette programtillegget lager en sikkerhetskopi av innstallasjonen."
 
 msgid "plugins.generic.backup.name"
-msgstr "Backup programtillegg"
+msgstr "Sikkerhetskopier programtillegg"

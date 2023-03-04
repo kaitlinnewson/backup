@@ -11,7 +11,9 @@
  * @brief Plugin to allow generation of a backup extract
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
+use PKP\linkAction\LinkAction;
+use PKP\plugins\GenericPlugin;
+use PKP\linkAction\request\AjaxModal;
 
 class BackupPlugin extends GenericPlugin {
 	/**
@@ -53,7 +55,6 @@ class BackupPlugin extends GenericPlugin {
 	 */
 	public function getActions($request, $verb) {
 		$router = $request->getRouter();
-		import('lib.pkp.classes.linkAction.request.AjaxModal');
 		return array_merge(
 			$this->getEnabled()?array(
 				new LinkAction(
@@ -89,7 +90,7 @@ class BackupPlugin extends GenericPlugin {
 			case 'db':
 				$dumpTool = Config::getVar('cli', 'dump');
 				header('Content-Description: File Transfer');
-				header('Content-Disposition: attachment; filename=db-' . strftime('%Y-%m-%d') . '.sql');
+				header('Content-Disposition: attachment; filename=db-' . date('Y-m-d') . '.sql');
 				header('Content-Type: application/sql');
 				header('Content-Transfer-Encoding: binary');
 				
@@ -104,7 +105,7 @@ class BackupPlugin extends GenericPlugin {
 			case 'files':
 				$tarTool = Config::getVar('cli', 'tar');
 				header('Content-Description: File Transfer');
-				header('Content-Disposition: attachment; filename=files-' . strftime('%Y-%m-%d') . '.tar.gz');
+				header('Content-Disposition: attachment; filename=files-' . date('Y-m-d') . '.tar.gz');
 				header('Content-Type: application/gzip');
 				header('Content-Transfer-Encoding: binary');
 				passthru($tarTool . ' -c -f - -z ' . escapeshellarg(Config::getVar('files', 'files_dir')), $returnValue);
@@ -113,7 +114,7 @@ class BackupPlugin extends GenericPlugin {
 			case 'code':
 				$tarTool = Config::getVar('cli', 'tar');
 				header('Content-Description: File Transfer');
-				header('Content-Disposition: attachment; filename=code-' . strftime('%Y-%m-%d') . '.tar.gz');
+				header('Content-Disposition: attachment; filename=code-' . date('Y-m-d') . '.tar.gz');
 				header('Content-Type: application/gzip');
 				header('Content-Transfer-Encoding: binary');
 				passthru($tarTool . ' -c -f - -z ' . escapeshellarg(dirname(dirname(dirname(dirname(__FILE__))))), $returnValue);

@@ -14,7 +14,7 @@
 <ul id="downloadLinks" data-message="{$errorMessage}">
 	<li>
 		{if $isDumpConfigured}
-			<a download href="{url router=$smarty.const.ROUTE_COMPONENT op="manage" category="generic" plugin=$pluginName verb="db"}">
+			<a download href="{url router=\PKP\core\PKPApplication::ROUTE_COMPONENT op="manage" category="generic" plugin=$pluginName verb="db"}">
 		{/if}
 			{translate key="plugins.generic.backup.db"}
 		{if $isDumpConfigured}
@@ -25,7 +25,7 @@
 	</li>
 	<li>
 		{if $isTarConfigured}
-			<a download href="{url router=$smarty.const.ROUTE_COMPONENT op="manage" category="generic" plugin=$pluginName verb="files"}">
+			<a download href="{url router=\PKP\core\PKPApplication::ROUTE_COMPONENT op="manage" category="generic" plugin=$pluginName verb="files"}">
 		{/if}
 			{translate key="plugins.generic.backup.files"}
 		{if $isTarConfigured}
@@ -36,7 +36,7 @@
 	</li>
 	<li>
 		{if $isTarConfigured}
-			<a download href="{url router=$smarty.const.ROUTE_COMPONENT op="manage" category="generic" plugin=$pluginName verb="code"}">
+			<a download href="{url router=\PKP\core\PKPApplication::ROUTE_COMPONENT op="manage" category="generic" plugin=$pluginName verb="code"}">
 		{/if}
 			{translate key="plugins.generic.backup.code"}
 		{if $isTarConfigured}

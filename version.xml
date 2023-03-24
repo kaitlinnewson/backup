@@ -13,8 +13,8 @@
 <version>
 	<application>backup</application>
 	<type>plugins.generic</type>
-	<release>2.0.3.0</release>
-	<date>2021-01-28</date>
+	<release>2.0.4.0</release>
+	<date>2023-03-23</date>
 	<lazy-load>1</lazy-load>
 	<class>BackupPlugin</class>
 </version>

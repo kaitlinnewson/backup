@@ -23,6 +23,7 @@ msgstr "Tento plugin vytvoří zálohu instalace."
 msgid "plugins.generic.backup.link"
 msgstr "Stáhnout zálohu"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p> Následující odkazy umožňují správci stránek stáhnout úplnou zálohu "

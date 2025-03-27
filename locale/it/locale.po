@@ -24,6 +24,7 @@ msgstr "Questo plugin esegue un backup dell'installazione."
 msgid "plugins.generic.backup.link"
 msgstr "Scarica il backup"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr "<p>I link sottostanti permettono all'amministratore del sito di scaricare un backup completo delle varie componenti dell'installazione. Un backup completo contiene <strong>tutte</strong> le seguenti componenti. Fare riferimento alla documentazione tecnica per informazioni su come tali componenti interagiscano.</p>"
 

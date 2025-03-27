@@ -57,6 +57,7 @@ msgstr "File"
 msgid "plugins.generic.backup.db"
 msgstr "Basis Data"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p>Tautan berikut memungkinkan Admin Situs untuk mengunduh backup lengkap "

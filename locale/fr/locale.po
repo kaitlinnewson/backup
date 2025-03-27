@@ -22,6 +22,7 @@ msgstr "Ce module génère une copie de sauvegarde de l'installation."
 msgid "plugins.generic.backup.link"
 msgstr "Télécharger la copie de sauvegarde"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p>Les liens suivants permettent à l'administrateur du site de télécharger "

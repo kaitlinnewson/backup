@@ -46,6 +46,7 @@ msgstr "فایلەکان"
 msgid "plugins.generic.backup.db"
 msgstr "داتابەیس"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p> ئەم لینکانەی خوارەوە ڕێگا بە بەڕێوەبەر دەدەن کە هەمو وەشانە هەڵگیراوەکان "

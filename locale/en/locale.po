@@ -20,8 +20,9 @@ msgstr "This plugin generates a backup of the installation."
 msgid "plugins.generic.backup.link"
 msgstr "Download Backup"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
-msgstr "<p>The following links allow the Site Administrator to download a full backup of the various components of an installation. A complete backup contains <strong>all</strong> of the following components. Please refer to technical documention for more information on how these components interrelate.</p>"
+msgstr "<p>The following links allow the Site Administrator to download a full backup of the various components of an installation. A complete backup contains <strong>all</strong> of the following components. Please refer to <a href=\"https://docs.pkp.sfu.ca/admin-guide/\">technical documentation</a> for more information on how these components interrelate.</p>"
 
 msgid "plugins.generic.backup.db"
 msgstr "Database"

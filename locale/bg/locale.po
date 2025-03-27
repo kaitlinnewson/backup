@@ -58,6 +58,7 @@ msgstr "Файлове"
 msgid "plugins.generic.backup.db"
 msgstr "База данни"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p>Следните връзки позволяват на администратора на сайта да изтегли пълен "

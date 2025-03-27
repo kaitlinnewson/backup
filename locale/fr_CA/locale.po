@@ -47,6 +47,7 @@ msgstr ""
 "tar = \"/bin/tar\"\n"
 "</pre> <br />"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p>Les liens suivants permettent à l'administrateur-trice du site de "

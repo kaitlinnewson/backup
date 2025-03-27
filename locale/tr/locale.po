@@ -55,6 +55,7 @@ msgstr "Dosyalar"
 msgid "plugins.generic.backup.db"
 msgstr "Veritabanı"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p>Aşağıdaki bağlantılar, Site Yöneticisinin bir yüklemenin çeşitli "

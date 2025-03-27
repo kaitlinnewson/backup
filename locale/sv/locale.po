@@ -24,6 +24,7 @@ msgstr "Det här pluginet skapar en backup av installationen."
 msgid "plugins.generic.backup.link"
 msgstr "Ladda ner backup"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr "<p>Följande länk gör det möjligt för webbplatsadministratören att ladda ner en backup av olika komponenter hos en installation. En fullständig backup innehåller <strong>alla</strong> av följande delar. Läs den tekniska dokumentaionen för mer information hur dessa delar hänger ihop.</p>"
 

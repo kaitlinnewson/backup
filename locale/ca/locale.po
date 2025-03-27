@@ -58,6 +58,7 @@ msgstr "Arxius"
 msgid "plugins.generic.backup.db"
 msgstr "Base de dades"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p>Els següents enllaços permeten a l'administrador/a del lloc descarregar "

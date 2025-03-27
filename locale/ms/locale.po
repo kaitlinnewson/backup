@@ -59,6 +59,7 @@ msgstr "Fail"
 msgid "plugins.generic.backup.db"
 msgstr "Pangkalan data"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p> Pautan berikut membolehkan Pentadbir Laman memuat turun sandaran penuh "

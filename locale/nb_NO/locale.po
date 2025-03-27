@@ -57,6 +57,7 @@ msgstr "Filer"
 msgid "plugins.generic.backup.db"
 msgstr "Database"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p>Følgende lenker tillater nettstedsadministratoren å laste ned en full "

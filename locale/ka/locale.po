@@ -20,6 +20,7 @@ msgstr "ეს პლაგინი ქმნის ინსტალაცი
 msgid "plugins.generic.backup.link"
 msgstr "მარქაფის ჩამოტვირთვა"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p>შემდეგი ბმულები საიტის ადმინისტრატორს საშუალებას აძლევს, ჩამოტვირთოს "

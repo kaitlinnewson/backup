@@ -22,6 +22,7 @@ msgstr "Ovaj dodatak pravi rezervnu kopiju instalacije."
 msgid "plugins.generic.backup.link"
 msgstr "Preuzmi rezervnu kopiju"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p>Sledeće veze omogućavaju administratoru sajta da preuzme celokupnu "

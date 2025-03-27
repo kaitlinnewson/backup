@@ -57,6 +57,7 @@ msgstr "Նիշքեր"
 msgid "plugins.generic.backup.db"
 msgstr "Շտեմարան"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p>Հետևյալ հղումները թույլ են տալիս Կայքի ադմինիստրատորին ներբեռնել "

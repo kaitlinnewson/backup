@@ -24,6 +24,7 @@ msgstr "Este plugin cria uma cópia de segurança da instalação."
 msgid "plugins.generic.backup.link"
 msgstr "Download da Cópia de Segurança"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p>As ligações seguintes permitem ao Administrador do Site descarregar uma "

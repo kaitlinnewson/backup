@@ -59,6 +59,7 @@ msgstr "Fișiere"
 msgid "plugins.generic.backup.db"
 msgstr "Baza de date"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p>Următoarele linkuri permit administratorului site-ului să descarce o "

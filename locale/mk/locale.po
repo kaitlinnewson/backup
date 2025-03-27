@@ -58,6 +58,7 @@ msgstr "Фајлови"
 msgid "plugins.generic.backup.db"
 msgstr "База на податоци"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p>Долните линкови му овозможуваат на Администрторот на списанието да симне "

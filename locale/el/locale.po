@@ -61,6 +61,7 @@ msgstr "Αρχεία"
 msgid "plugins.generic.backup.db"
 msgstr "Βάση Δεδομένων"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p>Οι ακόλουθοι σύνδεσμοι επιτρέπουν στον Διαχειριστή να κατεβάσει ένα "

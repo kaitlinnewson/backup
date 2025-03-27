@@ -57,6 +57,7 @@ msgstr "Arquivos"
 msgid "plugins.generic.backup.db"
 msgstr "Banco de Dados"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p> Os links a seguir permitem ao administrador do site baixar um backup "

@@ -57,6 +57,7 @@ msgstr "Datoteke"
 msgid "plugins.generic.backup.db"
 msgstr "Baza podatkov"
 
+#, fuzzy
 msgid "plugins.generic.backup.longdescription"
 msgstr ""
 "<p>Spodnje povezave omogočaju Administratorju spletišča, da prenese celotno "
